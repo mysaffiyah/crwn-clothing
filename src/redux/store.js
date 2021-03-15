@@ -13,3 +13,4 @@ if(process.env.NODE_ENV === 'development') {
 export const store = createStore(rootReducer, applyMiddleware(...middleWares));
 
 export const persistor = persistStore(store);
+ 
