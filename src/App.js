@@ -16,13 +16,6 @@ import {createStructuredSelector} from "reselect";
 import './App.css';
 
 class App extends React.Component{
-    constructor() {
-        super();
-
-        this.state = {
-            currentUser: null
-        }
-    }
 
     unsubscribeFromAuth = null;
 
@@ -41,7 +34,7 @@ class App extends React.Component{
                     });
                 });
             }
-            setCurrentUser(userAuth)
+            setCurrentUser(userAuth);
         });
     }
 
